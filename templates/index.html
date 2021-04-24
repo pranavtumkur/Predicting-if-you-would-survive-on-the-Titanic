@@ -49,10 +49,12 @@
 	  <input type="radio" id="S" name="Q" value="2">
 	  <label for="S">Southampton</label>
 	  <input type="radio" id="C" name="Q" value="3">
-	  <label for="C">Cherbourg</label><br><br>
+	  <label for="C">Cherbourg</label><br />
 			
-        <button type="submit" class="btn btn-primary btn-block btn-large" value="<?php echo isset($_POST["Age"]) ? $_POST["Age"] : '' ?>">Predict</button>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+	<input type="button" value="Retrieve Entered Values" onclick="history.back()">
     </form>
+									 
 
    <br>
    <br>
