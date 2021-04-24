@@ -17,14 +17,14 @@ def predict():
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
     
-    if final_features[0][7]==1:
-        final_features[0][7]=1
+    if final_features[0][6]==1:
+        final_features[0][6]=1
         final_features=[np.array(np.append(final_features[0],0))]
-    elif final_features[0][7]==2:
-        final_features[0][7]=0
+    elif final_features[0][6]==2:
+        final_features[0][6]=0
         final_features=[np.array(np.append(final_features[0],1))]
     else:
-        final_features[0][7]=0
+        final_features[0][6]=0
         final_features=[np.array(np.append(final_features[0],0))]
     print(final_features)
     
