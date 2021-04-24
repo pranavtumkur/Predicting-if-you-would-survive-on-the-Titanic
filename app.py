@@ -17,16 +17,17 @@ def predict():
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
     
-    if final_features[7]==1:
-        final_features[7]=0
-        final_features.append(0)
-    elif final_features[7]==2:
-        final_features[7]=1
-        final_features.append(0)
+    if final_features[0][7]==1:
+        final_features[0][7]=1
+        final_features=[np.array(np.append(final_features[0],0))]
+    elif final_features[0][7]==2:
+        final_features[0][7]=0
+        final_features=[np.array(np.append(final_features[0],1))]
     else:
-        final_features[7]=0
-        final_features.append(1)
-        
+        final_features[0][7]=0
+        final_features=[np.array(np.append(final_features[0],0))]
+    print(final_features)
+    
     prediction = model.predict(final_features)
     if prediction==0:
         output="You are dead!"
