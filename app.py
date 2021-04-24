@@ -23,7 +23,7 @@ def predict():
     elif final_features[7]=='S':
         final_features[7]=1
         final_features[8]=0
-     else:
+    else:
         final_features[7]=0
         final_features[8]=1
         
