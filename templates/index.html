@@ -16,8 +16,7 @@
 	<h1>Predict if you would have survived on the Titanic</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="PassengerId" placeholder="PassengerId" required="required" value="<?php echo isset($_POST['myField1']) ? $_POST['myField1'] : '' ?>" /><br>	    
+    <form action="{{ url_for('predict')}}"method="post">    
 	<p>Select the class you'd be travelling in:</p>
 	  <input type="radio" id="1" name="Pclass" value="1">
 	  <label for="1">1st class</label>
