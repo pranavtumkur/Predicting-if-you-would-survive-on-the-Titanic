@@ -26,13 +26,13 @@
 	  <label for="3">3rd class</label><br>
 	    
 	<p>Q2. What is your age?</p>
-	<input type="number" step="0" min="1" max="110" size="10" name="Age" placeholder="Age" required="required" value="<?php echo isset($_POST['Age']) ? $_POST['Age'] : '' ?>" /><br>
+	<input type="number" step="0" min="1" max="110" name="Age" placeholder="Age" required="required" value="<?php echo isset($_POST['Age']) ? $_POST['Age'] : '' ?>" /><br>
 	    
 	<p>Q3. How many siblings/spouses would you have on board?</p>
-	<input type="number" step="0" min="0" max="20" size="5" name="SibSp" placeholder="Siblings on board" required="required" /><br>
+	<input type="number" step="0" min="0" max="20" size="25" name="SibSp" placeholder="Siblings on board" required="required" /><br>
 	    
 	<p>Q4. How many parents/children would you have on board?</p>
-	<input type="number" step="0" min="0" max="20" name="Parch" placeholder="Parents/children on board" required="required" /><br>
+	<input type="number" step="0" min="0" max="20" size="40" name="Parch" placeholder="Parents/children on board" required="required" /><br>
 	    
 	<p>Q5. How much fare would you have paid for the ticket? (Avg. were $85 for 1st class, $20 for 2nd class, $14 for 3rd class)</p>
 	<input type="number" step="0" min="0" max="150" name="Fare" placeholder="Fare" required="required" /><br>
