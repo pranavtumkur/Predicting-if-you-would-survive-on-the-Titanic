@@ -16,6 +16,17 @@ def predict():
     '''
     int_features = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
+    
+    if final_features[7]=='Q':
+        final_features[7]=0
+        final_features[8]=0
+     elif final_features[7]=='S':
+        final_features[7]=1
+        final_features[8]=0
+     else:
+        final_features[7]=0
+        final_features[8]=1
+        
     prediction = model.predict(final_features)
     if prediction==0:
         output="You are dead!"
