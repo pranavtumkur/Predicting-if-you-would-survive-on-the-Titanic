@@ -20,7 +20,7 @@ def predict():
     if final_features[7]=='Q':
         final_features[7]=0
         final_features[8]=0
-     elif final_features[7]=='S':
+    elif final_features[7]=='S':
         final_features[7]=1
         final_features[8]=0
      else:
