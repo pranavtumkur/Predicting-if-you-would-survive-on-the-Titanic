@@ -18,7 +18,8 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="PassengerId" placeholder="PassengerId" required="required" /><br>	    
-	<input type="radio" id="1" name="Pclass" value="1">
+	<p>Select the class you'd be travelling in:</p>
+	  <input type="radio" id="1" name="Pclass" value="1">
 	  <label for="1">1st class</label><br>
 	  <input type="radio" id="2" name="Pclass" value="2">
 	  <label for="2">2nd class</label><br>
