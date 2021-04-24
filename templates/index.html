@@ -19,6 +19,14 @@
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="PassengerId" placeholder="PassengerId" required="required" />
         <input type="text" name="Pclass" placeholder="Pclass" required="required" />
+	    
+		 <input type="radio" id="male" name="gender" value="male">
+		  <label for="male">Male</label><br>
+		  <input type="radio" id="female" name="gender" value="female">
+		  <label for="female">Female</label><br>
+		  <input type="radio" id="other" name="gender" value="other">
+		  <label for="other">Other</label>
+	    
 	<input type="text" name="Age" placeholder="Age" required="required" />
 	<input type="text" name="SibSp" placeholder="Siblings on board" required="required" />
 	<input type="text" name="Parch" placeholder="Parch" required="required" />
