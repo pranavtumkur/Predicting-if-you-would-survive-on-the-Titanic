@@ -19,13 +19,13 @@ def predict():
     
     if final_features[7]==1:
         final_features[7]=0
-        final_features[8]=0
+        final_features.append(0)
     elif final_features[7]==2:
         final_features[7]=1
-        final_features[8]=0
+        final_features.append(0)
     else:
         final_features[7]=0
-        final_features[8]=1
+        final_features.append(1)
         
     prediction = model.predict(final_features)
     if prediction==0:
