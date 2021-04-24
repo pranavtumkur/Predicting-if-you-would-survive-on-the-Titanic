@@ -17,14 +17,14 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="PassengerId" placeholder="PassengerId" required="required" /><br>	    
+    	<input type="text" name="PassengerId" placeholder="PassengerId" required="required" value="<?php echo isset($_POST['myField1']) ? $_POST['myField1'] : '' ?>" /><br>	    
 	<p>Select the class you'd be travelling in:</p>
 	  <input type="radio" id="1" name="Pclass" value="1">
 	  <label for="1">1st class</label>
 	  <input type="radio" id="2" name="Pclass" value="2">
 	  <label for="2">2nd class</label>
 	  <input type="radio" id="3" name="Pclass" value="3">
-	  <label for="3">3rd class</label><br>    
+	  <label for="3">3rd class</label><br><br>   
 	<input type="number" step="0" min="1" name="Age" placeholder="Age" required="required" /><br>
 	<input type="number" step="0" min="0" name="SibSp" placeholder="Siblings on board" required="required" /><br>
 	<input type="text" name="Parch" placeholder="Parents/children on board" required="required" /><br>
