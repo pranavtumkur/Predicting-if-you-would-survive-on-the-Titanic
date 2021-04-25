@@ -30,4 +30,5 @@ Following are the steps, this project follows-
 ### Now all that is left to do is find out, if you would have survived on the Titanic!
 
 ### Go to my [Heroku app](https://predicting-survival-on-titanic.herokuapp.com/) and find out!
+(All predictions are 83.15% accurate)
 
