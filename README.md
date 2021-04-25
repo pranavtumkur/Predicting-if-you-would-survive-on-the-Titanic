@@ -4,7 +4,7 @@
   <img src="https://user-images.githubusercontent.com/65482013/115981795-1f22c200-a5b4-11eb-9193-6243812e53ba.jpg" />
 </p>
 
-Following are the steps, this project follows-
+## Following are the steps, this project follows-
 
 1. Importing [Titanic dataset](https://www.kaggle.com/c/titanic) from [Kaggle](https://www.kaggle.com/)
 2. Perfoming EDA and forming inferences via the peculiar trends via a [Jupyter Notebook](https://github.com/pranavtumkur/Predicting-if-you-would-survive-on-the-Titanic/blob/main/EDA%20and%20ML%20model%20of%20Titanic%20survival.ipynb)
