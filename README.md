@@ -27,5 +27,5 @@ Following are the steps, this project follows-
 5. The histograms of ages of people who died and survived follow almost the same trend. We can thus conclude that age did not play a role in survival. Though it should be noted that a lot of babies aged 0-1 survived, mostly because adult survivors would always carry any babies with them.
 6. People who had no spouses/siblings were a lot more likely to die. Similarly having 1-2 spouse/siblings helped survival a great deal!
 
-Now all that is left to do is find out if you would have survived if you were onboard the Titanic! Go to my [Heroku app](https://predicting-survival-on-titanic.herokuapp.com/) and find out!
+### Now all that is left to do is find out if you would have survived if you were onboard the Titanic! Go to my [Heroku app](https://predicting-survival-on-titanic.herokuapp.com/) and find out!
 
