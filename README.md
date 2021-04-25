@@ -9,14 +9,13 @@ Following are the steps, this project follows-
 * Importing [Titanic dataset](https://www.kaggle.com/c/titanic) from [Kaggle](https://www.kaggle.com/)
 * Perfoming EDA and forming inferences via the peculiar trends - [Link to the Jupyter Notebook](https://github.com/pranavtumkur/Predicting-if-you-would-survive-on-the-Titanic/blob/main/EDA%20and%20ML%20model%20of%20Titanic%20survival.ipynb)
 * Training, testing and optimizing a ML Logistic Regression model
+* Pickle this ML model
 * Create an index.html file to capture user inputs and send it to Python -[Link to index.html file](https://github.com/pranavtumkur/Predicting-if-you-would-survive-on-the-Titanic/blob/main/templates/index.html)
 * Build a Flask API-
   * To deploy the index.html created to a generic web address
   * To receive user entered data into Python
-  * To send predicted value back to the web address
+  * To send predicted value (using the pickled ML Model) back to the web address
+  * [Link to the Flask API built](https://github.com/pranavtumkur/Predicting-if-you-would-survive-on-the-Titanic/blob/main/app.py)
 * Deploy the Flask API to my [Heroku app](https://predicting-survival-on-titanic.herokuapp.com/) so it can be used by anyone and everyone 
 
-* Bullet list
-  * Nested bullet
-    * Sub-nested bullet etc
-* Bullet list item 2
+
